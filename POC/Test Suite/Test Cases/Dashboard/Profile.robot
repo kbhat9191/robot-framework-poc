@@ -12,6 +12,7 @@ Access Profile Page
     [Documentation]    1. login to hawk hr with valid email and password.
     ...    2. click on sign in button
     ...    3. On dashboard page, click on Profile link
+    ...    4. Check all profile related info.
     ...
     ...    Expected Result:
     ...    Should able to view the profile page.
