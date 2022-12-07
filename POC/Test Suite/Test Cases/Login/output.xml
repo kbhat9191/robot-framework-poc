@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20221205 17:40:01.201" schemaversion="2" generator="Robot 4.1.3 (Python 2.7.18 on win32)">
+<suite source="C:\Users\Karthik.bhat\PycharmProjects\pythonProject\POC\Test Suite\Test Cases\Login\Login.robot" id="s1" name="Login">
+<test id="s1-t1" name="Login To Hawk HR - Dashboard page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221205 17:40:01.594" level="INFO">Opening browser 'chrome' to base url 'https://craftsilicon.hawkhr.com/'.</msg>
+<status status="PASS" endtime="20221205 17:40:13.417" starttime="20221205 17:40:01.594"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20221205 17:40:13.534" starttime="20221205 17:40:13.418"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:inputUser</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221205 17:40:13.535" level="INFO">Typing text 'karthik.bhat@craftsilicon.com' into text field 'id:inputUser'.</msg>
+<status status="PASS" endtime="20221205 17:40:13.626" starttime="20221205 17:40:13.535"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:inputPassword</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221205 17:40:13.626" level="INFO">Typing password into text field 'id:inputPassword'.</msg>
+<msg timestamp="20221205 17:40:13.667" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221205 17:40:13.721" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" endtime="20221205 17:40:13.721" starttime="20221205 17:40:13.626"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>css:button[type='submit']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221205 17:40:13.722" level="INFO">Clicking button 'css:button[type='submit']'.</msg>
+<status status="PASS" endtime="20221205 17:40:17.698" starttime="20221205 17:40:13.721"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20221205 17:40:19.896" starttime="20221205 17:40:17.699"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Test completed</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" endtime="20221205 17:40:19.898" starttime="20221205 17:40:19.897"/>
+</kw>
+<doc>1. login to hawk hr with valid email and password.
+2. click on Sign in button.
+
+Expected Result: User should be landed to dashboard page.</doc>
+<tag>sanity</tag>
+<status status="PASS" endtime="20221205 17:40:19.898" starttime="20221205 17:40:01.592"/>
+</test>
+<status status="PASS" endtime="20221205 17:40:19.900" starttime="20221205 17:40:01.204"/>
+</suite>
+<statistics>
+<total>
+<stat fail="0" skip="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" skip="0" pass="1">sanity</stat>
+</tag>
+<suite>
+<stat fail="0" skip="0" id="s1" name="Login" pass="1">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
